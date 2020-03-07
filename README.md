@@ -12,8 +12,9 @@ Para revisar cambios con la rama que se está trabajando:
 
 Para actualizar el proyecto local con los cambios en la rama que se está trabajando:
 1. Posicionarse en la carpeta del proyecto.
-2. Escribir en la terminal:
+2. Verificar estado de los archivos locales:
     $ git status
+3. Obtener cambios en la rama:
     $ git pull origin nombre_rama
 
 Para enviar cambios a la rama donde se está trabajando:
