@@ -297,7 +297,12 @@
               "/NAL-Reasoner/images/logo_ipn3.png"
               (make-pathname :name "images/logo_ipn3" :type "png" :version nil
                              :defaults *this-file*)
-              "image/png"))
+              "image/png")
+	     (create-folder-dispatcher-and-handler
+              "/NAL-Reasoner/BC/"
+              (make-pathname :name nil :type nil :version nil
+                             :defaults *this-file*)
+              "text/plain"))
        (mapcar (lambda (args)
                  (apply 'create-prefix-dispatcher args))
                '(("/NAL-Reasoner/upload.html" upload-test)

@@ -1,0 +1,16 @@
+
+Fecha:  Miércoles 4 de marzo, 2020
+Tareas:
+
+1) Corregir la comunicación clinete-servidor asegurándose de que el archivo que se pide al servidor, se salve, también como archivo en el cliente. Después de eso, lo único necesario es mantener sincronizados ambos archivos (el del cliente y el del servidor), lo cual se hace con una bandera (en el cliente) de actualización que se enciende cuando el usuario realiza algún cambio sobre su base de conocimiento. En ese momento, se debe enviar el archivo al servidor para actualizar la copia allá...
+
+2) Revisar el sitio Open-NARS e instalar la última versión del Open-NARS-for-research.
+
+3) Actualizar el parser para que coincida (casi) con la última versión de NARCISE, cuya gramática se encuentra en http://opennars.org/javadoc/org/opennars/language/package-summary.html
+
+4) Actualizar la generación de expresiones en el cliente con los símbolos correctos según la nueva gramática...
+
+================================================================================================================================================================
+
+
+
