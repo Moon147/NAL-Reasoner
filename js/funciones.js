@@ -128,8 +128,24 @@ var conocimiento=document.querySelector("#conocimiento");
 var informacion=document.querySelector("#informacion");
 var id=1;
 
+console.log("Activo");
+
 function almacena(){
-  if(conocimiento.value!=""){
+  //alert("que pasaaaaa");
+  //console.log("activo2");
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "BC/BC0.txt", true);
+  xhr.send();
+  xhr.onreadystatechange = function(){
+    if (this.readyState == 4 && this.status == 200){
+      console.log(this.responseText);
+      //conocimiento.value = this.responseText;
+    }
+  };
+
+
+
+  /*if(conocimiento.value!=""){
     informacion.innerHTML=informacion.innerHTML+conocimiento.value+"<br>";
     var tabla=document.querySelector("#TABLA");
     var tbody= tabla.tBodies[0];
@@ -144,7 +160,7 @@ function almacena(){
     tbody.appendChild(fila);
     conocimiento.value="";
   }
-  id++;
+  id++;*/
 }
 
 //---------------------------------------------TABS BC Y MEDIO--------------------------------------------------
